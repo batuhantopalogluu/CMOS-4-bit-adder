@@ -1,0 +1,203 @@
+* SPICE3 file created from myadder.ext - technology: scmos
+
+.option scale=0.12u
+
+M1000 nand2_1/a cm vddm nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=1400 ps=700
+M1001 vddm dm nand2_1/a nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 nand2_0/a_5_n6# cm gnd gnd nmos w=8 l=2
++  ad=48 pd=28 as=440 ps=286
+M1003 nand2_1/a dm nand2_0/a_5_n6# gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1004 outm nand2_1/a vddm nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1005 vddm nand2_1/b outm nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 nand2_1/a_5_n6# nand2_1/a gnd gnd nmos w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1007 outm nand2_1/b nand2_1/a_5_n6# gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1008 xorr_0/inv_bt_0/y dm vddm xorr_0/w_n11_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1009 xorr_0/inv_bt_0/y dm gnd gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1010 xorr_0/inv_bt_1/y cm vddm xorr_0/inv_bt_1/w_n8_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1011 xorr_0/inv_bt_1/y cm gnd gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1012 xorr_0/a_5_14# cm vddm xorr_0/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1013 summ xorr_0/inv_bt_0/y xorr_0/a_5_14# xorr_0/w_n11_8# pmos w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1014 xorr_0/a_20_14# xorr_0/inv_bt_1/y summ xorr_0/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1015 vddm dm xorr_0/a_20_14# xorr_0/w_n11_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 xorr_0/a_5_n9# xorr_0/inv_bt_0/y gnd gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1017 summ xorr_0/inv_bt_1/y xorr_0/a_5_n9# gnd nmos w=8 l=2
++  ad=56 pd=30 as=0 ps=0
+M1018 xorr_0/a_20_n9# dm summ gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1019 gnd cm xorr_0/a_20_n9# gnd nmos w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1020 xorr_1/inv_bt_0/y am vddm xorr_1/w_n11_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1021 xorr_1/inv_bt_0/y am gnd gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1022 xorr_1/inv_bt_1/y bm vddm xorr_1/inv_bt_1/w_n8_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1023 xorr_1/inv_bt_1/y bm gnd gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1024 xorr_1/a_5_14# bm vddm xorr_1/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1025 cm xorr_1/inv_bt_0/y xorr_1/a_5_14# xorr_1/w_n11_8# pmos w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1026 xorr_1/a_20_14# xorr_1/inv_bt_1/y cm xorr_1/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1027 vddm am xorr_1/a_20_14# xorr_1/w_n11_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1028 xorr_1/a_5_n9# xorr_1/inv_bt_0/y gnd gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1029 cm xorr_1/inv_bt_1/y xorr_1/a_5_n9# gnd nmos w=8 l=2
++  ad=56 pd=30 as=0 ps=0
+M1030 xorr_1/a_20_n9# am cm gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1031 gnd bm xorr_1/a_20_n9# gnd nmos w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1032 nand2_1/b am vddm nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1033 vddm bm nand2_1/b nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1034 nand2_2/a_5_n6# am gnd gnd nmos w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1035 nand2_1/b bm nand2_2/a_5_n6# gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+C0 xorr_1/inv_bt_1/y gnd 0.12fF
+C1 summ xorr_0/inv_bt_1/y 0.06fF
+C2 gnd nand2_1/b 0.52fF
+C3 vddm outm 0.49fF
+C4 bm xorr_1/w_n11_8# 0.11fF
+C5 xorr_1/inv_bt_1/w_n8_8# xorr_1/inv_bt_1/y 0.10fF
+C6 cm gnd 0.78fF
+C7 am nand2_2/w_n8_8# 0.13fF
+C8 cm dm 1.52fF
+C9 xorr_1/inv_bt_0/y vddm 0.25fF
+C10 xorr_0/w_n11_8# dm 0.27fF
+C11 gnd nand2_1/a 0.32fF
+C12 nand2_1/a dm 0.02fF
+C13 cm xorr_0/inv_bt_0/y 0.06fF
+C14 outm nand2_1/b 0.02fF
+C15 am bm 1.46fF
+C16 xorr_0/inv_bt_0/y xorr_0/w_n11_8# 0.24fF
+C17 xorr_1/inv_bt_1/y vddm 0.37fF
+C18 xorr_0/inv_bt_1/y xorr_0/inv_bt_1/w_n8_8# 0.10fF
+C19 xorr_1/inv_bt_0/y xorr_1/inv_bt_1/y 0.11fF
+C20 vddm nand2_1/b 0.49fF
+C21 nand2_2/w_n8_8# dm 0.13fF
+C22 am xorr_1/w_n11_8# 0.27fF
+C23 cm vddm 1.05fF
+C24 cm xorr_1/inv_bt_0/y 0.07fF
+C25 vddm xorr_0/w_n11_8# 0.38fF
+C26 xorr_0/inv_bt_1/y gnd 0.12fF
+C27 xorr_0/inv_bt_1/y dm 0.15fF
+C28 vddm nand2_1/a 0.49fF
+C29 bm gnd 0.54fF
+C30 outm nand2_2/w_n8_8# 0.06fF
+C31 cm xorr_1/inv_bt_1/y 0.06fF
+C32 bm xorr_1/inv_bt_1/w_n8_8# 0.20fF
+C33 xorr_0/inv_bt_1/y xorr_0/inv_bt_0/y 0.11fF
+C34 summ gnd 0.11fF
+C35 vddm nand2_2/w_n8_8# 0.61fF
+C36 summ dm 0.03fF
+C37 cm xorr_0/w_n11_8# 0.11fF
+C38 nand2_1/b nand2_1/a 0.38fF
+C39 xorr_0/inv_bt_1/y vddm 0.37fF
+C40 summ xorr_0/inv_bt_0/y 0.07fF
+C41 bm vddm 1.24fF
+C42 bm xorr_1/inv_bt_0/y 0.06fF
+C43 am gnd 0.70fF
+C44 nand2_1/b nand2_2/w_n8_8# 0.17fF
+C45 cm nand2_2/w_n8_8# 0.13fF
+C46 xorr_1/w_n11_8# vddm 0.38fF
+C47 xorr_1/inv_bt_0/y xorr_1/w_n11_8# 0.24fF
+C48 summ vddm 0.11fF
+C49 bm xorr_1/inv_bt_1/y 0.17fF
+C50 nand2_1/a nand2_2/w_n8_8# 0.17fF
+C51 cm xorr_0/inv_bt_1/y 0.17fF
+C52 bm nand2_1/b 0.02fF
+C53 cm bm 0.03fF
+C54 xorr_0/inv_bt_1/y xorr_0/w_n11_8# 0.17fF
+C55 xorr_1/inv_bt_1/y xorr_1/w_n11_8# 0.17fF
+C56 gnd dm 0.60fF
+C57 am vddm 0.46fF
+C58 cm xorr_1/w_n11_8# 0.08fF
+C59 am xorr_1/inv_bt_0/y 0.05fF
+C60 xorr_0/inv_bt_1/w_n8_8# vddm 0.13fF
+C61 gnd xorr_0/inv_bt_0/y 0.12fF
+C62 summ xorr_0/w_n11_8# 0.09fF
+C63 xorr_0/inv_bt_0/y dm 0.05fF
+C64 gnd outm 0.04fF
+C65 am xorr_1/inv_bt_1/y 0.15fF
+C66 bm nand2_2/w_n8_8# 0.13fF
+C67 gnd vddm 0.64fF
+C68 cm am 0.03fF
+C69 xorr_1/inv_bt_0/y gnd 0.12fF
+C70 vddm dm 0.12fF
+C71 xorr_1/inv_bt_1/w_n8_8# vddm 0.15fF
+C72 cm xorr_0/inv_bt_1/w_n8_8# 0.20fF
+C73 xorr_0/inv_bt_0/y vddm 0.25fF
+C74 cm gnd 1.39fF
+C75 bm gnd 1.87fF
+C76 am gnd 1.38fF
+C77 xorr_1/inv_bt_1/y gnd 0.54fF
+C78 xorr_1/inv_bt_1/w_n8_8# gnd 0.74fF
+C79 xorr_1/inv_bt_0/y gnd 0.35fF
+C80 xorr_1/w_n11_8# gnd 2.15fF
+C81 summ gnd 0.18fF
+C82 xorr_0/inv_bt_1/y gnd 0.54fF
+C83 xorr_0/inv_bt_1/w_n8_8# gnd 0.74fF
+C84 gnd gnd 2.24fF
+C85 xorr_0/inv_bt_0/y gnd 0.35fF
+C86 vddm gnd 0.85fF
+C87 xorr_0/w_n11_8# gnd 2.15fF
+C88 outm gnd 0.12fF
+C89 nand2_1/b gnd 0.41fF
+C90 nand2_1/a gnd 0.51fF
+C91 nand2_2/w_n8_8# gnd 2.96fF
+C92 dm gnd 1.35fF
+
+
+
+* INDEPENDANT VOLTAGE SOURCE
+*
+*Vname +NODE -NODE VALUE
+*----- ----- ----- -----
+ VCC    vddm   gnd   DC=2.5
+
+* TRANSIENT analysis
+*
+*Vname +Node -Node Option T1  V1  T2    V2  T3  V3  T4    V4   T5   V5   T6     V6  T7   V7  T8     V8   T9   V9   T10    V10
+*----- ----- ----- ------ --  --  ----  --  --  --  ----  ---  ---  ---  -----  --  ---  --  -----  ---  ---  ---  -----  ---
+
+ Vb     bm     gnd  PWL(   0N   0  0.1N   0  4N   0  4.1N  2.5   8N  2.5   8.1N   0  12N   0  12.1N  2.5  16N  2.5  16.1N   0  20N  0  20.1N  2.5  24N  2.5  24.1N   0  28N   0   28.1N  2.5  32N 2.5) 
+ Vc     dm     gnd  PWL(   0N   0  0.1N   0  4N   0  4.1N  0     8N   0    8.1N  2.5 12N  2.5 12.1N  2.5  16N  2.5  16.1N   0  20N  0  20.1N   0   24N   0   24.1N  2.5 28N  2.5  28.1N  2.5  32N 2.5) 
+ Va     am     gnd  PWL(   0N   0  0.1N   0  4N   0  4.1N  0     8N   0    8.1N   0  12N   0  12.1N   0   16N   0   16.1N  2.5 20N 2.5 20.1N  2.5  24N  2.5  24.1N  2.5 28N  2.5  28.1N  2.5  32N 2.5) 
+
+*     TSTEP TSTOP
+*     ----- -----
+.TRAN 0.1N  32N
+.control
+listing
+run
+setplot tran1
+
+
+plot v(outm)+3 v(summ) v(am)+12 v(dm)+9 v(bm)+6 
+.endc
+*MODELS
+*
+.include tsmc_cmos025
+
+.END

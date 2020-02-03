@@ -1,0 +1,105 @@
+magic
+tech scmos
+timestamp 1579154749
+<< polysilicon >>
+rect -21 51 -19 59
+rect -13 51 -11 59
+rect 11 51 13 59
+rect 19 51 21 59
+rect 43 -3 45 8
+rect 51 -3 53 8
+<< polycontact >>
+rect -22 59 -18 63
+rect -14 59 -10 63
+rect 10 59 14 63
+rect 18 59 22 63
+rect 42 -7 46 -3
+rect 51 -7 55 -3
+<< metal1 >>
+rect -89 148 -87 152
+rect 8 148 21 152
+rect 3 115 6 119
+rect 17 116 20 119
+rect 110 115 122 119
+rect 8 96 19 100
+rect 8 94 11 96
+rect -95 89 -87 92
+rect 16 91 18 92
+rect 11 88 19 91
+rect -95 82 -87 85
+rect -87 73 -31 76
+rect -67 66 -38 69
+rect -41 4 -38 66
+rect -35 56 -31 73
+rect -22 63 -18 67
+rect -14 63 -10 84
+rect 7 81 11 86
+rect 7 80 13 81
+rect 7 78 14 80
+rect 10 63 14 78
+rect 18 78 22 85
+rect 106 81 121 84
+rect 18 74 26 78
+rect 18 63 22 74
+rect -35 52 -28 56
+rect 61 20 68 24
+rect -41 0 -28 4
+rect 61 0 68 4
+rect 3 -6 25 -3
+rect 22 -11 25 -6
+rect 34 -6 42 -3
+rect 51 -11 54 -7
+rect 22 -14 54 -11
+<< m2contact >>
+rect -94 148 -89 153
+rect 6 114 11 120
+rect -72 96 -67 101
+rect 6 86 11 91
+rect -92 73 -87 78
+rect -72 65 -67 70
+rect -23 67 -18 72
+rect -3 20 2 25
+rect 29 20 34 25
+rect -2 -8 3 -3
+rect 29 -8 34 -3
+<< metal2 >>
+rect -92 78 -89 148
+rect -72 70 -69 96
+rect 6 91 10 114
+rect -44 71 -40 89
+rect -44 67 -23 71
+rect -2 -3 1 20
+rect 29 -3 32 20
+use xorr  xorr_1
+timestamp 1579109767
+transform 1 0 -28 0 1 110
+box -62 -30 37 51
+use xorr  xorr_0
+timestamp 1579109767
+transform 1 0 79 0 1 110
+box -62 -30 37 51
+use nand2  nand2_2
+timestamp 1578069705
+transform 1 0 -24 0 1 14
+box -8 -14 24 42
+use nand2  nand2_0
+timestamp 1578069705
+transform 1 0 8 0 1 14
+box -8 -14 24 42
+use nand2  nand2_1
+timestamp 1578069705
+transform 1 0 40 0 1 14
+box -8 -14 24 42
+<< labels >>
+rlabel metal1 -34 54 -34 54 4 vddm
+rlabel metal1 -34 2 -34 2 2 gndm
+rlabel metal1 -20 66 -20 66 5 am
+rlabel metal1 -12 66 -12 66 5 bm
+rlabel metal1 12 66 12 66 5 cm
+rlabel metal1 20 66 20 66 5 dm
+rlabel metal1 66 22 66 22 7 outm
+rlabel metal1 119 117 119 117 7 summ
+rlabel metal1 -93 90 -93 90 3 san
+rlabel metal1 -92 83 -92 83 3 sbn
+rlabel metal1 24 76 24 76 1 scn
+<< end >>

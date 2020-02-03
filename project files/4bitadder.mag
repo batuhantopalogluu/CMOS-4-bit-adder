@@ -1,0 +1,107 @@
+magic
+tech scmos
+timestamp 1579165144
+<< metal1 >>
+rect 211 162 230 166
+rect 440 162 466 166
+rect 669 162 688 166
+rect 217 129 219 133
+rect 446 129 448 133
+rect 675 129 677 133
+rect 904 129 906 133
+rect 210 110 236 114
+rect 439 110 465 114
+rect 668 110 694 114
+rect 210 108 214 110
+rect 439 108 443 110
+rect 668 108 672 110
+rect -2 103 0 106
+rect 227 103 229 106
+rect 456 103 458 106
+rect 685 103 687 106
+rect -2 96 0 99
+rect 227 96 229 99
+rect 456 96 458 99
+rect 685 96 687 99
+rect 121 88 138 92
+rect 134 81 138 88
+rect 350 87 354 92
+rect 579 88 583 92
+rect 808 88 812 92
+rect 350 83 402 87
+rect 579 84 629 88
+rect 808 84 859 88
+rect 134 77 171 81
+rect 167 18 171 77
+rect 180 35 279 39
+rect 163 14 171 18
+rect 275 10 279 35
+rect 275 6 318 10
+rect 314 2 318 6
+rect 314 -2 342 2
+rect 338 -5 342 -2
+rect 398 -5 402 83
+rect 411 34 508 38
+rect 504 10 508 34
+rect 504 6 547 10
+rect 543 2 547 6
+rect 543 -2 571 2
+rect 338 -9 402 -5
+rect 567 -4 571 -2
+rect 625 -4 629 84
+rect 846 66 848 70
+rect 638 34 737 38
+rect 733 10 737 34
+rect 846 32 850 34
+rect 846 12 850 14
+rect 733 6 776 10
+rect 772 2 776 6
+rect 772 -2 800 2
+rect 567 -8 629 -4
+rect 796 -4 800 -2
+rect 855 -4 859 84
+rect 796 -8 859 -4
+<< m2contact >>
+rect 158 34 163 39
+rect 175 34 180 39
+rect 387 33 392 38
+rect 406 33 411 38
+rect 616 33 621 38
+rect 633 33 638 38
+<< metal2 >>
+rect 163 35 175 39
+rect 392 34 406 38
+rect 621 34 633 38
+use myadder  myadder_0
+timestamp 1579154749
+transform 1 0 95 0 1 14
+box -95 -14 122 161
+use myadder  myadder_1
+timestamp 1579154749
+transform 1 0 324 0 1 14
+box -95 -14 122 161
+use myadder  myadder_2
+timestamp 1579154749
+transform 1 0 553 0 1 14
+box -95 -14 122 161
+use myadder  myadder_3
+timestamp 1579154749
+transform 1 0 782 0 1 14
+box -95 -14 122 161
+<< labels >>
+rlabel metal1 848 13 848 13 1 gnd
+rlabel metal1 848 33 848 33 1 cout
+rlabel metal1 847 68 847 68 1 vdd
+rlabel metal1 -1 104 -1 104 3 a0
+rlabel metal1 -1 97 -1 97 3 b0
+rlabel metal1 228 97 228 97 1 b1
+rlabel metal1 228 104 228 104 1 a1
+rlabel metal1 218 131 218 131 1 s0
+rlabel metal1 447 131 447 131 1 s1
+rlabel metal1 457 104 457 104 1 a2
+rlabel metal1 457 97 457 97 1 b2
+rlabel metal1 676 131 676 131 1 s2
+rlabel metal1 686 104 686 104 1 a3
+rlabel metal1 686 97 686 97 1 b3
+rlabel metal1 905 131 905 131 7 s3
+<< end >>

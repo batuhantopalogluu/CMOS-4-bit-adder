@@ -1,0 +1,131 @@
+magic
+tech scmos
+timestamp 1579109767
+<< nwell >>
+rect -8 19 37 42
+rect -9 14 37 19
+rect -11 8 37 14
+<< ntransistor >>
+rect 3 -9 5 -1
+rect 9 -9 11 -1
+rect 18 -9 20 -1
+rect 24 -9 26 -1
+<< ptransistor >>
+rect 3 14 5 34
+rect 9 14 11 34
+rect 18 14 20 34
+rect 24 14 26 34
+<< ndiffusion >>
+rect 2 -9 3 -1
+rect 5 -9 9 -1
+rect 11 -9 12 -1
+rect 17 -9 18 -1
+rect 20 -9 24 -1
+rect 26 -9 27 -1
+<< pdiffusion >>
+rect 2 14 3 34
+rect 5 14 9 34
+rect 11 14 12 34
+rect 16 14 18 34
+rect 20 14 24 34
+rect 26 14 27 34
+<< ndcontact >>
+rect -2 -9 2 -1
+rect 12 -9 17 -1
+rect 27 -9 31 -1
+<< pdcontact >>
+rect -2 14 2 34
+rect 12 14 16 34
+rect 27 14 31 34
+<< polysilicon >>
+rect -51 37 -49 45
+rect 3 34 5 45
+rect 9 34 11 38
+rect 18 34 20 45
+rect 24 34 26 38
+rect 3 11 5 14
+rect 9 13 11 14
+rect 8 11 11 13
+rect 18 12 20 14
+rect 8 8 10 11
+rect 14 10 20 12
+rect 14 8 16 10
+rect -8 3 -6 6
+rect 3 6 10 8
+rect 3 3 5 6
+rect 13 5 16 8
+rect 24 7 26 14
+rect 19 5 26 7
+rect 13 3 15 5
+rect -8 1 5 3
+rect 3 -1 5 1
+rect 9 1 15 3
+rect 19 2 21 5
+rect 9 -1 11 1
+rect 18 0 21 2
+rect 18 -1 20 0
+rect 24 -1 26 2
+rect -51 -18 -49 -7
+rect -21 -18 -19 -7
+rect 3 -12 5 -9
+rect 9 -12 11 -9
+rect 18 -19 20 -9
+rect 24 -19 26 -9
+<< polycontact >>
+rect -52 45 -48 49
+rect 1 45 5 49
+rect -10 6 -6 10
+rect -51 -22 -47 -18
+rect -22 -22 -18 -18
+rect 16 -23 20 -19
+rect 24 -23 28 -19
+<< metal1 >>
+rect -48 45 1 48
+rect -38 38 -31 42
+rect -8 38 37 42
+rect -2 34 2 38
+rect 27 34 31 38
+rect 12 9 16 14
+rect -2 5 31 9
+rect 12 -1 16 5
+rect -38 -14 -31 -10
+rect -10 -13 -7 -11
+rect -2 -13 2 -9
+rect 27 -13 31 -9
+rect -10 -16 36 -13
+rect -62 -21 -51 -18
+rect -47 -21 -25 -18
+rect -62 -28 -36 -25
+rect -28 -27 -25 -21
+rect -18 -22 -16 -19
+rect -11 -22 16 -19
+rect 24 -26 27 -23
+rect -5 -27 27 -26
+rect -28 -29 27 -27
+rect -28 -30 -2 -29
+<< m2contact >>
+rect -41 5 -36 11
+rect -36 -29 -31 -24
+rect -16 -24 -11 -19
+<< pm12contact >>
+rect 15 45 20 51
+<< metal2 >>
+rect -40 45 15 48
+rect -40 11 -37 45
+rect -16 -25 -13 -24
+rect -31 -28 -13 -25
+use inv_bt  inv_bt_1
+timestamp 1578055772
+transform 1 0 -54 0 1 0
+box -8 -14 16 42
+use inv_bt  inv_bt_0
+timestamp 1578055772
+transform 1 0 -24 0 1 0
+box -8 -14 16 42
+<< labels >>
+rlabel metal1 0 39 0 39 5 vdd
+rlabel metal1 4 -15 4 -15 1 gnd
+rlabel metal1 -2 -20 -2 -20 1 bbb
+rlabel metal1 30 7 30 7 1 ccc
+rlabel metal1 -47 47 -47 47 1 aaa
+<< end >>

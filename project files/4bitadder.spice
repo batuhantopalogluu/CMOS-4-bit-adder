@@ -1,0 +1,696 @@
+* SPICE3 file created from 4bitadder.ext - technology: scmos
+
+.option scale=0.12u
+
+M1000 myadder_0/nand2_1/a myadder_0/cm vdd myadder_0/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=5600 ps=2800
+M1001 vdd gnd myadder_0/nand2_1/a myadder_0/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 myadder_0/nand2_0/a_5_n6# myadder_0/cm gnd Gnd nmos w=8 l=2
++  ad=48 pd=28 as=1760 ps=1144
+M1003 myadder_0/nand2_1/a gnd myadder_0/nand2_0/a_5_n6# Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1004 myadder_1/dm myadder_0/nand2_1/a vdd myadder_0/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1005 vdd myadder_0/nand2_1/b myadder_1/dm myadder_0/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 myadder_0/nand2_1/a_5_n6# myadder_0/nand2_1/a gnd Gnd nmos w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1007 myadder_1/dm myadder_0/nand2_1/b myadder_0/nand2_1/a_5_n6# Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1008 myadder_0/xorr_0/inv_bt_0/y gnd vdd myadder_0/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1009 myadder_0/xorr_0/inv_bt_0/y gnd gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1010 myadder_0/xorr_0/inv_bt_1/y myadder_0/cm vdd myadder_0/xorr_0/inv_bt_1/w_n8_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1011 myadder_0/xorr_0/inv_bt_1/y myadder_0/cm gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1012 myadder_0/xorr_0/a_5_14# myadder_0/cm vdd myadder_0/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1013 s0 myadder_0/xorr_0/inv_bt_0/y myadder_0/xorr_0/a_5_14# myadder_0/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1014 myadder_0/xorr_0/a_20_14# myadder_0/xorr_0/inv_bt_1/y s0 myadder_0/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1015 vdd gnd myadder_0/xorr_0/a_20_14# myadder_0/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1016 myadder_0/xorr_0/a_5_n9# myadder_0/xorr_0/inv_bt_0/y gnd Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1017 s0 myadder_0/xorr_0/inv_bt_1/y myadder_0/xorr_0/a_5_n9# Gnd nmos w=8 l=2
++  ad=56 pd=30 as=0 ps=0
+M1018 myadder_0/xorr_0/a_20_n9# gnd s0 Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1019 gnd myadder_0/cm myadder_0/xorr_0/a_20_n9# Gnd nmos w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1020 myadder_0/xorr_1/inv_bt_0/y b0 vdd myadder_0/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1021 myadder_0/xorr_1/inv_bt_0/y b0 gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1022 myadder_0/xorr_1/inv_bt_1/y a0 vdd myadder_0/xorr_1/inv_bt_1/w_n8_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1023 myadder_0/xorr_1/inv_bt_1/y a0 gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1024 myadder_0/xorr_1/a_5_14# a0 vdd myadder_0/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1025 myadder_0/cm myadder_0/xorr_1/inv_bt_0/y myadder_0/xorr_1/a_5_14# myadder_0/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1026 myadder_0/xorr_1/a_20_14# myadder_0/xorr_1/inv_bt_1/y myadder_0/cm myadder_0/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1027 vdd b0 myadder_0/xorr_1/a_20_14# myadder_0/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1028 myadder_0/xorr_1/a_5_n9# myadder_0/xorr_1/inv_bt_0/y gnd Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1029 myadder_0/cm myadder_0/xorr_1/inv_bt_1/y myadder_0/xorr_1/a_5_n9# Gnd nmos w=8 l=2
++  ad=56 pd=30 as=0 ps=0
+M1030 myadder_0/xorr_1/a_20_n9# b0 myadder_0/cm Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1031 gnd a0 myadder_0/xorr_1/a_20_n9# Gnd nmos w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1032 myadder_0/nand2_1/b b0 vdd myadder_0/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1033 vdd a0 myadder_0/nand2_1/b myadder_0/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1034 myadder_0/nand2_2/a_5_n6# b0 gnd Gnd nmos w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1035 myadder_0/nand2_1/b a0 myadder_0/nand2_2/a_5_n6# Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1036 myadder_1/nand2_1/a myadder_1/cm vdd myadder_1/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1037 vdd myadder_1/dm myadder_1/nand2_1/a myadder_1/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1038 myadder_1/nand2_0/a_5_n6# myadder_1/cm gnd Gnd nmos w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1039 myadder_1/nand2_1/a myadder_1/dm myadder_1/nand2_0/a_5_n6# Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1040 myadder_2/dm myadder_1/nand2_1/a vdd myadder_1/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1041 vdd myadder_1/nand2_1/b myadder_2/dm myadder_1/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1042 myadder_1/nand2_1/a_5_n6# myadder_1/nand2_1/a gnd Gnd nmos w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1043 myadder_2/dm myadder_1/nand2_1/b myadder_1/nand2_1/a_5_n6# Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1044 myadder_1/xorr_0/inv_bt_0/y myadder_1/dm vdd myadder_1/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1045 myadder_1/xorr_0/inv_bt_0/y myadder_1/dm gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1046 myadder_1/xorr_0/inv_bt_1/y myadder_1/cm vdd myadder_1/xorr_0/inv_bt_1/w_n8_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1047 myadder_1/xorr_0/inv_bt_1/y myadder_1/cm gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1048 myadder_1/xorr_0/a_5_14# myadder_1/cm vdd myadder_1/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1049 s1 myadder_1/xorr_0/inv_bt_0/y myadder_1/xorr_0/a_5_14# myadder_1/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1050 myadder_1/xorr_0/a_20_14# myadder_1/xorr_0/inv_bt_1/y s1 myadder_1/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1051 vdd myadder_1/dm myadder_1/xorr_0/a_20_14# myadder_1/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1052 myadder_1/xorr_0/a_5_n9# myadder_1/xorr_0/inv_bt_0/y gnd Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1053 s1 myadder_1/xorr_0/inv_bt_1/y myadder_1/xorr_0/a_5_n9# Gnd nmos w=8 l=2
++  ad=56 pd=30 as=0 ps=0
+M1054 myadder_1/xorr_0/a_20_n9# myadder_1/dm s1 Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1055 gnd myadder_1/cm myadder_1/xorr_0/a_20_n9# Gnd nmos w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1056 myadder_1/xorr_1/inv_bt_0/y b1 vdd myadder_1/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1057 myadder_1/xorr_1/inv_bt_0/y b1 gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1058 myadder_1/xorr_1/inv_bt_1/y a1 vdd myadder_1/xorr_1/inv_bt_1/w_n8_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1059 myadder_1/xorr_1/inv_bt_1/y a1 gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1060 myadder_1/xorr_1/a_5_14# a1 vdd myadder_1/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1061 myadder_1/cm myadder_1/xorr_1/inv_bt_0/y myadder_1/xorr_1/a_5_14# myadder_1/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1062 myadder_1/xorr_1/a_20_14# myadder_1/xorr_1/inv_bt_1/y myadder_1/cm myadder_1/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1063 vdd b1 myadder_1/xorr_1/a_20_14# myadder_1/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1064 myadder_1/xorr_1/a_5_n9# myadder_1/xorr_1/inv_bt_0/y gnd Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1065 myadder_1/cm myadder_1/xorr_1/inv_bt_1/y myadder_1/xorr_1/a_5_n9# Gnd nmos w=8 l=2
++  ad=56 pd=30 as=0 ps=0
+M1066 myadder_1/xorr_1/a_20_n9# b1 myadder_1/cm Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1067 gnd a1 myadder_1/xorr_1/a_20_n9# Gnd nmos w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1068 myadder_1/nand2_1/b b1 vdd myadder_1/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1069 vdd a1 myadder_1/nand2_1/b myadder_1/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1070 myadder_1/nand2_2/a_5_n6# b1 gnd Gnd nmos w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1071 myadder_1/nand2_1/b a1 myadder_1/nand2_2/a_5_n6# Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1072 myadder_2/nand2_1/a myadder_2/cm vdd myadder_2/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1073 vdd myadder_2/dm myadder_2/nand2_1/a myadder_2/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1074 myadder_2/nand2_0/a_5_n6# myadder_2/cm gnd Gnd nmos w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1075 myadder_2/nand2_1/a myadder_2/dm myadder_2/nand2_0/a_5_n6# Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1076 myadder_3/dm myadder_2/nand2_1/a vdd myadder_2/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1077 vdd myadder_2/nand2_1/b myadder_3/dm myadder_2/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1078 myadder_2/nand2_1/a_5_n6# myadder_2/nand2_1/a gnd Gnd nmos w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1079 myadder_3/dm myadder_2/nand2_1/b myadder_2/nand2_1/a_5_n6# Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1080 myadder_2/xorr_0/inv_bt_0/y myadder_2/dm vdd myadder_2/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1081 myadder_2/xorr_0/inv_bt_0/y myadder_2/dm gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1082 myadder_2/xorr_0/inv_bt_1/y myadder_2/cm vdd myadder_2/xorr_0/inv_bt_1/w_n8_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1083 myadder_2/xorr_0/inv_bt_1/y myadder_2/cm gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1084 myadder_2/xorr_0/a_5_14# myadder_2/cm vdd myadder_2/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1085 s2 myadder_2/xorr_0/inv_bt_0/y myadder_2/xorr_0/a_5_14# myadder_2/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1086 myadder_2/xorr_0/a_20_14# myadder_2/xorr_0/inv_bt_1/y s2 myadder_2/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1087 vdd myadder_2/dm myadder_2/xorr_0/a_20_14# myadder_2/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1088 myadder_2/xorr_0/a_5_n9# myadder_2/xorr_0/inv_bt_0/y gnd Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1089 s2 myadder_2/xorr_0/inv_bt_1/y myadder_2/xorr_0/a_5_n9# Gnd nmos w=8 l=2
++  ad=56 pd=30 as=0 ps=0
+M1090 myadder_2/xorr_0/a_20_n9# myadder_2/dm s2 Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1091 gnd myadder_2/cm myadder_2/xorr_0/a_20_n9# Gnd nmos w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1092 myadder_2/xorr_1/inv_bt_0/y b2 vdd myadder_2/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1093 myadder_2/xorr_1/inv_bt_0/y b2 gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1094 myadder_2/xorr_1/inv_bt_1/y a2 vdd myadder_2/xorr_1/inv_bt_1/w_n8_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1095 myadder_2/xorr_1/inv_bt_1/y a2 gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1096 myadder_2/xorr_1/a_5_14# a2 vdd myadder_2/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1097 myadder_2/cm myadder_2/xorr_1/inv_bt_0/y myadder_2/xorr_1/a_5_14# myadder_2/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1098 myadder_2/xorr_1/a_20_14# myadder_2/xorr_1/inv_bt_1/y myadder_2/cm myadder_2/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1099 vdd b2 myadder_2/xorr_1/a_20_14# myadder_2/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1100 myadder_2/xorr_1/a_5_n9# myadder_2/xorr_1/inv_bt_0/y gnd Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1101 myadder_2/cm myadder_2/xorr_1/inv_bt_1/y myadder_2/xorr_1/a_5_n9# Gnd nmos w=8 l=2
++  ad=56 pd=30 as=0 ps=0
+M1102 myadder_2/xorr_1/a_20_n9# b2 myadder_2/cm Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1103 gnd a2 myadder_2/xorr_1/a_20_n9# Gnd nmos w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1104 myadder_2/nand2_1/b b2 vdd myadder_2/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1105 vdd a2 myadder_2/nand2_1/b myadder_2/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1106 myadder_2/nand2_2/a_5_n6# b2 gnd Gnd nmos w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1107 myadder_2/nand2_1/b a2 myadder_2/nand2_2/a_5_n6# Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1108 myadder_3/nand2_1/a myadder_3/cm vdd myadder_3/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1109 vdd myadder_3/dm myadder_3/nand2_1/a myadder_3/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1110 myadder_3/nand2_0/a_5_n6# myadder_3/cm gnd Gnd nmos w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1111 myadder_3/nand2_1/a myadder_3/dm myadder_3/nand2_0/a_5_n6# Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1112 cout myadder_3/nand2_1/a vdd myadder_3/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1113 vdd myadder_3/nand2_1/b cout myadder_3/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1114 myadder_3/nand2_1/a_5_n6# myadder_3/nand2_1/a gnd Gnd nmos w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1115 cout myadder_3/nand2_1/b myadder_3/nand2_1/a_5_n6# Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1116 myadder_3/xorr_0/inv_bt_0/y myadder_3/dm vdd myadder_3/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1117 myadder_3/xorr_0/inv_bt_0/y myadder_3/dm gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1118 myadder_3/xorr_0/inv_bt_1/y myadder_3/cm vdd myadder_3/xorr_0/inv_bt_1/w_n8_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1119 myadder_3/xorr_0/inv_bt_1/y myadder_3/cm gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1120 myadder_3/xorr_0/a_5_14# myadder_3/cm vdd myadder_3/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1121 s3 myadder_3/xorr_0/inv_bt_0/y myadder_3/xorr_0/a_5_14# myadder_3/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1122 myadder_3/xorr_0/a_20_14# myadder_3/xorr_0/inv_bt_1/y s3 myadder_3/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1123 vdd myadder_3/dm myadder_3/xorr_0/a_20_14# myadder_3/xorr_0/w_n11_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1124 myadder_3/xorr_0/a_5_n9# myadder_3/xorr_0/inv_bt_0/y gnd Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1125 s3 myadder_3/xorr_0/inv_bt_1/y myadder_3/xorr_0/a_5_n9# Gnd nmos w=8 l=2
++  ad=56 pd=30 as=0 ps=0
+M1126 myadder_3/xorr_0/a_20_n9# myadder_3/dm s3 Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1127 gnd myadder_3/cm myadder_3/xorr_0/a_20_n9# Gnd nmos w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1128 myadder_3/xorr_1/inv_bt_0/y b3 vdd myadder_3/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1129 myadder_3/xorr_1/inv_bt_0/y b3 gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1130 myadder_3/xorr_1/inv_bt_1/y a3 vdd myadder_3/xorr_1/inv_bt_1/w_n8_8# pmos w=20 l=2
++  ad=100 pd=50 as=0 ps=0
+M1131 myadder_3/xorr_1/inv_bt_1/y a3 gnd Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1132 myadder_3/xorr_1/a_5_14# a3 vdd myadder_3/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1133 myadder_3/cm myadder_3/xorr_1/inv_bt_0/y myadder_3/xorr_1/a_5_14# myadder_3/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=140 pd=54 as=0 ps=0
+M1134 myadder_3/xorr_1/a_20_14# myadder_3/xorr_1/inv_bt_1/y myadder_3/cm myadder_3/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=80 pd=48 as=0 ps=0
+M1135 vdd b3 myadder_3/xorr_1/a_20_14# myadder_3/xorr_1/w_n11_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1136 myadder_3/xorr_1/a_5_n9# myadder_3/xorr_1/inv_bt_0/y gnd Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1137 myadder_3/cm myadder_3/xorr_1/inv_bt_1/y myadder_3/xorr_1/a_5_n9# Gnd nmos w=8 l=2
++  ad=56 pd=30 as=0 ps=0
+M1138 myadder_3/xorr_1/a_20_n9# b3 myadder_3/cm Gnd nmos w=8 l=2
++  ad=32 pd=24 as=0 ps=0
+M1139 gnd a3 myadder_3/xorr_1/a_20_n9# Gnd nmos w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1140 myadder_3/nand2_1/b b3 vdd myadder_3/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=120 pd=52 as=0 ps=0
+M1141 vdd a3 myadder_3/nand2_1/b myadder_3/nand2_2/w_n8_8# pmos w=20 l=2
++  ad=0 pd=0 as=0 ps=0
+M1142 myadder_3/nand2_2/a_5_n6# b3 gnd Gnd nmos w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1143 myadder_3/nand2_1/b a3 myadder_3/nand2_2/a_5_n6# Gnd nmos w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+C0 gnd myadder_3/dm 1.30fF
+C1 myadder_1/xorr_0/inv_bt_1/y myadder_1/xorr_0/w_n11_8# 0.17fF
+C2 myadder_0/cm myadder_0/xorr_1/inv_bt_1/y 0.06fF
+C3 a0 myadder_0/xorr_1/inv_bt_1/w_n8_8# 0.20fF
+C4 myadder_3/xorr_0/w_n11_8# myadder_3/xorr_0/inv_bt_0/y 0.24fF
+C5 gnd myadder_2/xorr_1/inv_bt_1/y 0.12fF
+C6 b3 myadder_3/xorr_1/inv_bt_1/y 0.15fF
+C7 myadder_2/xorr_0/inv_bt_1/y myadder_2/xorr_0/inv_bt_1/w_n8_8# 0.10fF
+C8 gnd a0 0.54fF
+C9 myadder_1/cm vdd 1.05fF
+C10 myadder_1/xorr_0/inv_bt_1/y myadder_1/xorr_0/inv_bt_1/w_n8_8# 0.10fF
+C11 myadder_3/xorr_1/w_n11_8# vdd 0.38fF
+C12 gnd myadder_1/xorr_1/inv_bt_1/y 0.12fF
+C13 myadder_3/nand2_1/a gnd 0.32fF
+C14 myadder_1/cm myadder_1/dm 1.67fF
+C15 myadder_0/cm myadder_0/xorr_0/inv_bt_1/w_n8_8# 0.20fF
+C16 myadder_1/cm myadder_1/xorr_0/inv_bt_1/y 0.17fF
+C17 myadder_3/cm myadder_3/xorr_0/inv_bt_1/w_n8_8# 0.20fF
+C18 a1 myadder_1/nand2_1/b 0.02fF
+C19 myadder_3/cm a3 0.03fF
+C20 gnd a1 0.61fF
+C21 myadder_1/xorr_1/inv_bt_1/w_n8_8# myadder_1/xorr_1/inv_bt_1/y 0.10fF
+C22 myadder_1/nand2_2/w_n8_8# vdd 0.61fF
+C23 s3 myadder_3/xorr_0/inv_bt_0/y 0.07fF
+C24 myadder_3/cm b3 0.03fF
+C25 s3 myadder_3/xorr_0/w_n11_8# 0.09fF
+C26 myadder_2/nand2_1/b vdd 0.49fF
+C27 myadder_1/nand2_2/w_n8_8# myadder_1/dm 0.13fF
+C28 myadder_0/nand2_2/w_n8_8# vdd 0.61fF
+C29 a3 myadder_3/nand2_2/w_n8_8# 0.13fF
+C30 myadder_3/nand2_1/b vdd 0.49fF
+C31 a2 vdd 1.24fF
+C32 a1 myadder_1/xorr_1/inv_bt_1/w_n8_8# 0.20fF
+C33 gnd myadder_2/xorr_1/inv_bt_0/y 0.12fF
+C34 gnd s0 0.14fF
+C35 a2 myadder_2/xorr_1/w_n11_8# 0.11fF
+C36 myadder_0/xorr_0/inv_bt_0/y vdd 0.25fF
+C37 myadder_1/dm myadder_0/nand2_2/w_n8_8# 0.07fF
+C38 myadder_0/nand2_1/b myadder_0/nand2_1/a 0.38fF
+C39 b3 myadder_3/nand2_2/w_n8_8# 0.13fF
+C40 myadder_2/xorr_0/inv_bt_1/y myadder_2/xorr_0/w_n11_8# 0.17fF
+C41 myadder_3/cm myadder_3/xorr_0/inv_bt_0/y 0.06fF
+C42 b2 vdd 0.46fF
+C43 myadder_1/xorr_1/inv_bt_1/y myadder_1/xorr_1/w_n11_8# 0.17fF
+C44 s0 myadder_0/xorr_0/inv_bt_1/y 0.06fF
+C45 b2 myadder_2/xorr_1/w_n11_8# 0.27fF
+C46 myadder_3/cm myadder_3/xorr_0/w_n11_8# 0.11fF
+C47 gnd myadder_1/xorr_0/inv_bt_0/y 0.12fF
+C48 myadder_3/nand2_2/w_n8_8# cout 0.06fF
+C49 myadder_1/xorr_1/inv_bt_1/y myadder_1/xorr_1/inv_bt_0/y 0.11fF
+C50 a0 myadder_0/xorr_1/w_n11_8# 0.11fF
+C51 a1 myadder_1/xorr_1/w_n11_8# 0.11fF
+C52 s2 myadder_2/xorr_0/inv_bt_1/y 0.06fF
+C53 myadder_2/nand2_2/w_n8_8# myadder_2/nand2_1/b 0.17fF
+C54 myadder_2/xorr_0/inv_bt_1/y vdd 0.37fF
+C55 a1 myadder_1/xorr_1/inv_bt_0/y 0.06fF
+C56 myadder_2/dm myadder_1/nand2_2/w_n8_8# 0.06fF
+C57 gnd myadder_2/nand2_1/a 0.32fF
+C58 myadder_3/cm myadder_3/xorr_1/inv_bt_1/y 0.06fF
+C59 a2 myadder_2/nand2_2/w_n8_8# 0.13fF
+C60 a3 gnd 0.61fF
+C61 myadder_2/dm myadder_2/nand2_1/b 0.55fF
+C62 myadder_2/xorr_1/inv_bt_1/w_n8_8# vdd 0.15fF
+C63 b2 myadder_2/nand2_2/w_n8_8# 0.13fF
+C64 b3 gnd 0.70fF
+C65 myadder_3/xorr_1/inv_bt_0/y myadder_3/xorr_1/w_n11_8# 0.24fF
+C66 myadder_3/dm vdd 0.64fF
+C67 gnd cout 0.04fF
+C68 a0 myadder_0/xorr_1/inv_bt_0/y 0.06fF
+C69 myadder_2/xorr_1/inv_bt_1/y vdd 0.37fF
+C70 a0 vdd 1.24fF
+C71 myadder_2/xorr_1/inv_bt_1/y myadder_2/xorr_1/w_n11_8# 0.17fF
+C72 myadder_0/nand2_1/b myadder_0/nand2_2/w_n8_8# 0.17fF
+C73 gnd s1 0.11fF
+C74 gnd myadder_3/xorr_0/inv_bt_0/y 0.12fF
+C75 myadder_1/xorr_1/inv_bt_1/y vdd 0.37fF
+C76 myadder_3/nand2_1/a vdd 0.49fF
+C77 gnd myadder_0/xorr_0/w_n11_8# 0.27fF
+C78 myadder_2/cm a2 0.03fF
+C79 myadder_0/cm myadder_0/nand2_2/w_n8_8# 0.13fF
+C80 gnd b0 0.70fF
+C81 myadder_1/cm myadder_1/xorr_0/w_n11_8# 0.11fF
+C82 myadder_0/xorr_0/inv_bt_1/y myadder_0/xorr_0/w_n11_8# 0.17fF
+C83 myadder_2/xorr_0/inv_bt_1/y myadder_2/dm 0.15fF
+C84 myadder_2/cm b2 0.03fF
+C85 a1 vdd 1.24fF
+C86 myadder_0/cm myadder_0/xorr_0/inv_bt_0/y 0.06fF
+C87 gnd myadder_2/xorr_0/inv_bt_0/y 0.12fF
+C88 myadder_1/cm myadder_1/xorr_0/inv_bt_1/w_n8_8# 0.20fF
+C89 myadder_3/cm myadder_3/nand2_2/w_n8_8# 0.13fF
+C90 myadder_3/dm myadder_2/nand2_2/w_n8_8# 0.06fF
+C91 myadder_3/xorr_1/inv_bt_1/y gnd 0.12fF
+C92 myadder_3/dm myadder_2/dm 0.14fF
+C93 gnd b1 0.70fF
+C94 s3 gnd 0.11fF
+C95 myadder_2/xorr_1/inv_bt_0/y vdd 0.25fF
+C96 myadder_2/cm myadder_2/xorr_0/inv_bt_1/y 0.17fF
+C97 s0 vdd 0.11fF
+C98 a3 myadder_3/xorr_1/inv_bt_1/w_n8_8# 0.20fF
+C99 myadder_2/xorr_1/w_n11_8# myadder_2/xorr_1/inv_bt_0/y 0.24fF
+C100 a0 myadder_0/xorr_1/inv_bt_1/y 0.17fF
+C101 myadder_1/xorr_0/inv_bt_0/y vdd 0.25fF
+C102 myadder_0/nand2_1/a myadder_0/nand2_2/w_n8_8# 0.17fF
+C103 a0 myadder_0/nand2_1/b 0.02fF
+C104 myadder_1/cm myadder_1/nand2_2/w_n8_8# 0.13fF
+C105 myadder_1/xorr_0/inv_bt_0/y myadder_1/dm 0.05fF
+C106 myadder_3/cm gnd 0.78fF
+C107 myadder_2/cm myadder_2/xorr_1/inv_bt_1/y 0.06fF
+C108 myadder_1/xorr_0/inv_bt_1/y myadder_1/xorr_0/inv_bt_0/y 0.11fF
+C109 myadder_3/xorr_0/inv_bt_1/w_n8_8# vdd 0.13fF
+C110 myadder_2/nand2_1/a vdd 0.49fF
+C111 myadder_0/cm a0 0.03fF
+C112 b0 myadder_0/xorr_1/w_n11_8# 0.27fF
+C113 a3 vdd 1.24fF
+C114 myadder_3/xorr_0/inv_bt_1/y myadder_3/dm 0.15fF
+C115 b1 myadder_1/xorr_1/w_n11_8# 0.27fF
+C116 b3 vdd 0.46fF
+C117 b1 myadder_1/xorr_1/inv_bt_0/y 0.05fF
+C118 cout vdd 0.49fF
+C119 myadder_2/xorr_0/w_n11_8# myadder_2/xorr_0/inv_bt_0/y 0.24fF
+C120 myadder_3/xorr_1/inv_bt_1/y myadder_3/xorr_1/inv_bt_1/w_n8_8# 0.10fF
+C121 s1 vdd 0.11fF
+C122 myadder_3/xorr_0/inv_bt_0/y vdd 0.25fF
+C123 myadder_2/nand2_2/w_n8_8# myadder_2/nand2_1/a 0.17fF
+C124 myadder_1/dm s1 0.03fF
+C125 myadder_0/xorr_0/w_n11_8# vdd 0.38fF
+C126 myadder_3/xorr_0/w_n11_8# vdd 0.38fF
+C127 a2 myadder_2/nand2_1/b 0.02fF
+C128 b0 myadder_0/xorr_1/inv_bt_0/y 0.05fF
+C129 myadder_2/cm myadder_2/xorr_1/inv_bt_0/y 0.07fF
+C130 myadder_1/xorr_0/inv_bt_1/y s1 0.06fF
+C131 b0 vdd 0.46fF
+C132 s2 myadder_2/xorr_0/inv_bt_0/y 0.07fF
+C133 myadder_2/nand2_1/a myadder_2/dm 0.02fF
+C134 gnd myadder_1/nand2_1/b 0.52fF
+C135 myadder_2/xorr_0/inv_bt_0/y vdd 0.25fF
+C136 b2 a2 1.48fF
+C137 gnd myadder_0/xorr_0/inv_bt_1/y 0.27fF
+C138 myadder_1/nand2_1/a myadder_1/nand2_1/b 0.38fF
+C139 myadder_3/xorr_1/inv_bt_1/y vdd 0.37fF
+C140 gnd myadder_1/nand2_1/a 0.32fF
+C141 b1 vdd 0.46fF
+C142 myadder_1/cm myadder_1/xorr_1/inv_bt_1/y 0.06fF
+C143 s3 vdd 0.11fF
+C144 a2 myadder_2/xorr_1/inv_bt_1/w_n8_8# 0.20fF
+C145 myadder_1/cm a1 0.03fF
+C146 myadder_3/xorr_0/inv_bt_1/y myadder_3/xorr_0/inv_bt_1/w_n8_8# 0.10fF
+C147 a3 myadder_3/xorr_1/inv_bt_0/y 0.06fF
+C148 myadder_3/dm myadder_2/nand2_1/b 0.02fF
+C149 myadder_3/cm vdd 1.05fF
+C150 myadder_3/nand2_1/b myadder_3/dm 0.55fF
+C151 b0 myadder_0/xorr_1/inv_bt_1/y 0.15fF
+C152 myadder_2/dm myadder_2/xorr_0/inv_bt_0/y 0.05fF
+C153 myadder_1/xorr_0/w_n11_8# myadder_1/xorr_0/inv_bt_0/y 0.24fF
+C154 a0 myadder_0/nand2_2/w_n8_8# 0.13fF
+C155 b3 myadder_3/xorr_1/inv_bt_0/y 0.05fF
+C156 gnd myadder_1/xorr_1/inv_bt_0/y 0.12fF
+C157 a2 myadder_2/xorr_1/inv_bt_1/y 0.17fF
+C158 b2 myadder_2/xorr_1/inv_bt_1/y 0.15fF
+C159 myadder_3/nand2_2/w_n8_8# vdd 0.61fF
+C160 myadder_3/nand2_1/a myadder_3/nand2_1/b 0.38fF
+C161 a1 myadder_1/nand2_2/w_n8_8# 0.13fF
+C162 myadder_0/cm myadder_0/xorr_0/w_n11_8# 0.11fF
+C163 myadder_1/cm myadder_1/xorr_0/inv_bt_0/y 0.06fF
+C164 myadder_0/cm b0 0.03fF
+C165 myadder_3/xorr_0/inv_bt_1/y myadder_3/xorr_0/inv_bt_0/y 0.11fF
+C166 myadder_2/cm myadder_2/xorr_0/inv_bt_0/y 0.06fF
+C167 myadder_3/xorr_0/inv_bt_1/y myadder_3/xorr_0/w_n11_8# 0.17fF
+C168 myadder_2/xorr_1/inv_bt_1/y myadder_2/xorr_1/inv_bt_1/w_n8_8# 0.10fF
+C169 gnd s2 0.11fF
+C170 myadder_1/xorr_1/inv_bt_0/y myadder_1/xorr_1/w_n11_8# 0.24fF
+C171 myadder_1/xorr_0/w_n11_8# s1 0.09fF
+C172 myadder_0/xorr_1/inv_bt_1/w_n8_8# vdd 0.15fF
+C173 myadder_3/xorr_1/inv_bt_1/y myadder_3/xorr_1/inv_bt_0/y 0.11fF
+C174 a3 myadder_3/xorr_1/w_n11_8# 0.11fF
+C175 gnd myadder_0/xorr_1/inv_bt_0/y 0.12fF
+C176 a2 myadder_2/xorr_1/inv_bt_0/y 0.06fF
+C177 myadder_1/nand2_1/b vdd 0.49fF
+C178 gnd vdd 2.87fF
+C179 s0 myadder_0/xorr_0/inv_bt_0/y 0.07fF
+C180 b3 myadder_3/xorr_1/w_n11_8# 0.27fF
+C181 myadder_1/nand2_1/b myadder_1/dm 0.48fF
+C182 b2 myadder_2/xorr_1/inv_bt_0/y 0.05fF
+C183 myadder_0/xorr_0/inv_bt_1/y vdd 0.37fF
+C184 gnd myadder_1/dm 1.42fF
+C185 s3 myadder_3/xorr_0/inv_bt_1/y 0.06fF
+C186 myadder_1/nand2_1/a vdd 0.49fF
+C187 gnd myadder_1/xorr_0/inv_bt_1/y 0.12fF
+C188 myadder_3/nand2_1/a myadder_3/dm 0.02fF
+C189 myadder_1/xorr_1/inv_bt_1/w_n8_8# vdd 0.15fF
+C190 myadder_1/nand2_1/a myadder_1/dm 0.02fF
+C191 myadder_2/nand2_1/a myadder_2/nand2_1/b 0.38fF
+C192 myadder_2/xorr_0/inv_bt_1/w_n8_8# vdd 0.13fF
+C193 myadder_3/cm myadder_3/xorr_1/inv_bt_0/y 0.07fF
+C194 a3 myadder_3/nand2_1/b 0.02fF
+C195 myadder_3/cm myadder_3/xorr_0/inv_bt_1/y 0.17fF
+C196 a1 myadder_1/xorr_1/inv_bt_1/y 0.17fF
+C197 myadder_2/dm myadder_1/nand2_1/b 0.02fF
+C198 myadder_1/xorr_1/w_n11_8# vdd 0.38fF
+C199 gnd myadder_2/dm 1.29fF
+C200 myadder_3/nand2_1/b cout 0.02fF
+C201 myadder_0/xorr_1/inv_bt_1/w_n8_8# myadder_0/xorr_1/inv_bt_1/y 0.10fF
+C202 myadder_1/xorr_1/inv_bt_0/y vdd 0.25fF
+C203 myadder_3/xorr_1/inv_bt_1/y myadder_3/xorr_1/w_n11_8# 0.17fF
+C204 gnd myadder_0/xorr_1/inv_bt_1/y 0.12fF
+C205 myadder_2/xorr_1/inv_bt_1/y myadder_2/xorr_1/inv_bt_0/y 0.11fF
+C206 myadder_1/cm b1 0.03fF
+C207 myadder_0/xorr_1/inv_bt_0/y myadder_0/xorr_1/w_n11_8# 0.24fF
+C208 myadder_0/xorr_1/w_n11_8# vdd 0.38fF
+C209 gnd myadder_0/nand2_1/b 0.52fF
+C210 b0 myadder_0/nand2_2/w_n8_8# 0.13fF
+C211 myadder_3/xorr_1/inv_bt_1/w_n8_8# vdd 0.15fF
+C212 myadder_0/xorr_0/inv_bt_0/y myadder_0/xorr_0/w_n11_8# 0.24fF
+C213 s2 myadder_2/xorr_0/w_n11_8# 0.09fF
+C214 myadder_2/cm gnd 0.78fF
+C215 myadder_2/xorr_0/w_n11_8# vdd 0.38fF
+C216 gnd myadder_0/cm 2.30fF
+C217 myadder_0/xorr_0/inv_bt_1/y myadder_0/xorr_0/inv_bt_1/w_n8_8# 0.10fF
+C218 b1 myadder_1/nand2_2/w_n8_8# 0.13fF
+C219 myadder_0/cm myadder_0/xorr_0/inv_bt_1/y 0.17fF
+C220 myadder_3/cm myadder_3/xorr_1/w_n11_8# 0.08fF
+C221 myadder_3/xorr_1/inv_bt_0/y gnd 0.12fF
+C222 myadder_3/xorr_0/inv_bt_1/y gnd 0.12fF
+C223 s2 vdd 0.11fF
+C224 myadder_2/cm myadder_2/xorr_0/inv_bt_1/w_n8_8# 0.20fF
+C225 myadder_0/xorr_1/inv_bt_0/y vdd 0.25fF
+C226 myadder_3/dm cout 0.05fF
+C227 myadder_2/xorr_1/w_n11_8# vdd 0.38fF
+C228 myadder_1/dm vdd 0.62fF
+C229 myadder_2/xorr_0/inv_bt_1/y myadder_2/xorr_0/inv_bt_0/y 0.11fF
+C230 myadder_3/dm myadder_3/xorr_0/inv_bt_0/y 0.05fF
+C231 myadder_1/xorr_0/inv_bt_1/y vdd 0.37fF
+C232 myadder_0/xorr_1/inv_bt_1/y myadder_0/xorr_1/w_n11_8# 0.17fF
+C233 gnd myadder_0/nand2_1/a 0.35fF
+C234 myadder_3/xorr_0/w_n11_8# myadder_3/dm 0.27fF
+C235 myadder_2/dm myadder_2/xorr_0/w_n11_8# 0.27fF
+C236 myadder_1/xorr_0/inv_bt_1/y myadder_1/dm 0.15fF
+C237 b0 a0 1.48fF
+C238 myadder_3/nand2_2/w_n8_8# myadder_3/nand2_1/b 0.17fF
+C239 myadder_2/nand2_2/w_n8_8# vdd 0.61fF
+C240 gnd myadder_1/cm 0.78fF
+C241 myadder_0/cm myadder_0/xorr_1/w_n11_8# 0.08fF
+C242 s2 myadder_2/dm 0.03fF
+C243 myadder_2/dm vdd 0.62fF
+C244 myadder_2/cm myadder_2/xorr_0/w_n11_8# 0.11fF
+C245 myadder_0/xorr_1/inv_bt_0/y myadder_0/xorr_1/inv_bt_1/y 0.11fF
+C246 s3 myadder_3/dm 0.03fF
+C247 myadder_0/xorr_1/inv_bt_1/y vdd 0.37fF
+C248 myadder_2/dm myadder_1/dm 0.12fF
+C249 b1 myadder_1/xorr_1/inv_bt_1/y 0.15fF
+C250 myadder_1/nand2_2/w_n8_8# myadder_1/nand2_1/b 0.17fF
+C251 myadder_0/nand2_1/b vdd 0.49fF
+C252 s0 myadder_0/xorr_0/w_n11_8# 0.09fF
+C253 gnd myadder_2/nand2_1/b 0.52fF
+C254 myadder_1/xorr_0/inv_bt_0/y s1 0.07fF
+C255 myadder_0/xorr_0/inv_bt_1/w_n8_8# vdd 0.13fF
+C256 myadder_1/dm myadder_0/nand2_1/b 0.02fF
+C257 myadder_3/cm myadder_3/dm 1.69fF
+C258 myadder_2/cm vdd 1.05fF
+C259 gnd myadder_0/nand2_2/w_n8_8# 0.13fF
+C260 gnd myadder_3/nand2_1/b 0.52fF
+C261 myadder_1/nand2_1/a myadder_1/nand2_2/w_n8_8# 0.17fF
+C262 myadder_0/cm myadder_0/xorr_1/inv_bt_0/y 0.07fF
+C263 b1 a1 1.48fF
+C264 myadder_2/cm myadder_2/xorr_1/w_n11_8# 0.08fF
+C265 gnd a2 0.61fF
+C266 myadder_0/cm vdd 1.05fF
+C267 b3 a3 1.48fF
+C268 myadder_2/nand2_2/w_n8_8# myadder_2/dm 0.13fF
+C269 gnd myadder_0/xorr_0/inv_bt_0/y 0.18fF
+C270 myadder_1/cm myadder_1/xorr_1/w_n11_8# 0.08fF
+C271 gnd b2 0.70fF
+C272 myadder_3/xorr_1/inv_bt_0/y vdd 0.25fF
+C273 myadder_1/cm myadder_1/xorr_1/inv_bt_0/y 0.07fF
+C274 myadder_0/xorr_0/inv_bt_1/y myadder_0/xorr_0/inv_bt_0/y 0.11fF
+C275 myadder_3/xorr_0/inv_bt_1/y vdd 0.37fF
+C276 myadder_3/nand2_2/w_n8_8# myadder_3/dm 0.13fF
+C277 myadder_3/nand2_2/w_n8_8# myadder_3/nand2_1/a 0.17fF
+C278 gnd myadder_2/xorr_0/inv_bt_1/y 0.12fF
+C279 myadder_2/cm myadder_2/nand2_2/w_n8_8# 0.13fF
+C280 myadder_1/xorr_0/w_n11_8# vdd 0.38fF
+C281 myadder_2/cm myadder_2/dm 1.69fF
+C282 myadder_0/nand2_1/a vdd 0.49fF
+C283 myadder_1/xorr_0/inv_bt_1/w_n8_8# vdd 0.13fF
+C284 myadder_1/xorr_0/w_n11_8# myadder_1/dm 0.27fF
+C285 a3 myadder_3/xorr_1/inv_bt_1/y 0.17fF
+C286 myadder_3/cm Gnd 1.39fF
+C287 a3 Gnd 1.66fF
+C288 b3 Gnd 1.34fF
+C289 myadder_3/xorr_1/inv_bt_1/y Gnd 0.54fF
+C290 myadder_3/xorr_1/inv_bt_1/w_n8_8# Gnd 0.74fF
+C291 myadder_3/xorr_1/inv_bt_0/y Gnd 0.35fF
+C292 myadder_3/xorr_1/w_n11_8# Gnd 2.15fF
+C293 s3 Gnd 0.20fF
+C294 myadder_3/xorr_0/inv_bt_1/y Gnd 0.54fF
+C295 myadder_3/xorr_0/inv_bt_1/w_n8_8# Gnd 0.74fF
+C296 gnd Gnd 11.45fF
+C297 myadder_3/xorr_0/inv_bt_0/y Gnd 0.35fF
+C298 vdd Gnd 3.75fF
+C299 myadder_3/xorr_0/w_n11_8# Gnd 2.15fF
+C300 cout Gnd 0.14fF
+C301 myadder_3/nand2_1/b Gnd 0.41fF
+C302 myadder_3/nand2_1/a Gnd 0.51fF
+C303 myadder_3/nand2_2/w_n8_8# Gnd 2.96fF
+C304 myadder_3/dm Gnd 1.95fF
+C305 myadder_2/cm Gnd 1.39fF
+C306 a2 Gnd 1.89fF
+C307 b2 Gnd 1.26fF
+C308 myadder_2/xorr_1/inv_bt_1/y Gnd 0.54fF
+C309 myadder_2/xorr_1/inv_bt_1/w_n8_8# Gnd 0.74fF
+C310 myadder_2/xorr_1/inv_bt_0/y Gnd 0.35fF
+C311 myadder_2/xorr_1/w_n11_8# Gnd 2.15fF
+C312 s2 Gnd 0.20fF
+C313 myadder_2/xorr_0/inv_bt_1/y Gnd 0.54fF
+C314 myadder_2/xorr_0/inv_bt_1/w_n8_8# Gnd 0.74fF
+C315 myadder_2/xorr_0/inv_bt_0/y Gnd 0.35fF
+C316 myadder_2/xorr_0/w_n11_8# Gnd 2.15fF
+C317 myadder_2/nand2_1/b Gnd 0.41fF
+C318 myadder_2/nand2_1/a Gnd 0.51fF
+C319 myadder_2/nand2_2/w_n8_8# Gnd 2.96fF
+C320 myadder_2/dm Gnd 1.56fF
+C321 myadder_1/cm Gnd 1.39fF
+C322 a1 Gnd 1.89fF
+C323 b1 Gnd 1.01fF
+C324 myadder_1/xorr_1/inv_bt_1/y Gnd 0.54fF
+C325 myadder_1/xorr_1/inv_bt_1/w_n8_8# Gnd 0.74fF
+C326 myadder_1/xorr_1/inv_bt_0/y Gnd 0.35fF
+C327 myadder_1/xorr_1/w_n11_8# Gnd 2.15fF
+C328 s1 Gnd 0.20fF
+C329 myadder_1/xorr_0/inv_bt_1/y Gnd 0.54fF
+C330 myadder_1/xorr_0/inv_bt_1/w_n8_8# Gnd 0.74fF
+C331 myadder_1/xorr_0/inv_bt_0/y Gnd 0.35fF
+C332 myadder_1/xorr_0/w_n11_8# Gnd 2.15fF
+C333 myadder_1/nand2_1/b Gnd 0.41fF
+C334 myadder_1/nand2_1/a Gnd 0.51fF
+C335 myadder_1/nand2_2/w_n8_8# Gnd 2.96fF
+C336 myadder_1/dm Gnd 1.73fF
+C337 myadder_0/cm Gnd 1.39fF
+C338 a0 Gnd 1.89fF
+C339 b0 Gnd 1.39fF
+C340 myadder_0/xorr_1/inv_bt_1/y Gnd 0.54fF
+C341 myadder_0/xorr_1/inv_bt_1/w_n8_8# Gnd 0.74fF
+C342 myadder_0/xorr_1/inv_bt_0/y Gnd 0.35fF
+C343 myadder_0/xorr_1/w_n11_8# Gnd 2.15fF
+C344 s0 Gnd 0.10fF
+C345 myadder_0/xorr_0/inv_bt_1/y Gnd 0.54fF
+C346 myadder_0/xorr_0/inv_bt_1/w_n8_8# Gnd 0.74fF
+C347 myadder_0/xorr_0/inv_bt_0/y Gnd 0.35fF
+C348 myadder_0/xorr_0/w_n11_8# Gnd 2.15fF
+C349 myadder_0/nand2_1/b Gnd 0.41fF
+C350 myadder_0/nand2_1/a Gnd 0.51fF
+C351 myadder_0/nand2_2/w_n8_8# Gnd 2.96fF
+
+
+* INDEPENDANT VOLTAGE SOURCE
+*
+*Vname +NODE -NODE VALUE
+*----- ----- ----- -----
+
+ VCC    vdd   gnd   DC=2.5
+ *V1     a0    gnd   DC=2.5
+ *V2     b0    gnd   DC=2.5
+ *V3     a1    gnd   DC=2.5
+ *V4     b1    gnd   DC=2.5
+ *V5     a2    gnd   DC=2.5
+ *V6     b2    gnd   DC=2.5
+ *V7     a3    gnd   DC=2.5
+ *V8     b3    gnd   DC=2.5
+
+
+
+
+* TRANSIENT analysis
+*
+*Vname +Node -Node Option T1  V1  T2    V2  T3  V3  T4    V4   T5   V5   T6     V6  T7   V7  T8     V8   T9   V9   T10    V10
+*----- ----- ----- ------ --  --  ----  --  --  --  ----  ---  ---  ---  -----  --  ---  --  -----  ---  ---  ---  -----  ---
+Va      a0     gnd  PWL( 0N   2.5  0.1N   2.5  4N   2.5  4.1N   0     8N    0   8.1N    0   12N   0  12.1N  2.5 16N 2.5) 
+Va1     b0     gnd  PWL( 0N   2.5  0.1N   2.5  4N   2.5  4.1N   0     8N    0   8.1N    0   12N   0  ) 
+Va2     a1     gnd  PWL( 0N   0    0.1N    0   4N   0    4.1N  2.5    8N   2.5  8.1N   0  12N   2.5 )
+Va3     b1     gnd  PWL( 0N   0    0.1N    0   4N   0    4.1N  2.5    8N   2.5  8.1N   0  12N   2.5)
+Va4     a2     gnd  PWL( 0N   0  0.1N   0  4N   0  4.1N  0     8N   0   8.1N   2.5  12N   2.5 12.1N  2.5 16N 2.5)
+Va5     b2     gnd  PWL( 0N   0  0.1N   0  4N   0  4.1N  0     8N   0   8.1N   2.5  12N   2.5 12.1N  2.5 16N 2.5)  
+Va6     a3     gnd  PWL( 0N   0  0.1N   0  4N   0  4.1N  0     8N   0   8.1N   0  12N   2.5) 
+Va7     b3     gnd  PWL( 0N   0  0.1N   0  4N   0  4.1N  0     8N   0   8.1N   0  12N   2.5 ) 
+
+*     TSTEP TSTOP
+*     ----- -----
+.TRAN 0.1N  16N
+.control
+listing
+run
+setplot tran1
+
+
+plot v(cout) v(s3)+12 v(s2)+9 v(s1)+6 v(s0)+3 
+
+plot v(a0) v(a1)+3 v(a2)+6 v(a3)+9
+plot v(b0) v(b1)+3 v(b2)+6 v(b3)+9 
+.endc
+*MODELS
+*
+.include tsmc_cmos025
+
+.END

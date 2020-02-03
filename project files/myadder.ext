@@ -1,0 +1,118 @@
+timestamp 1579154749
+version 8.2
+tech scmos
+style TSMC0.25um(tsmc25)from:t11y
+scale 1000 1 12
+resistclasses 4600 3500 1067000 1067000 1 4000 4000 80 80 80 80 40
+use xorr xorr_1 1 0 -28 0 1 110
+use xorr xorr_0 1 0 79 0 1 110
+use nand2 nand2_2 1 0 -24 0 1 14
+use nand2 nand2_0 1 0 8 0 1 14
+use nand2 nand2_1 1 0 40 0 1 14
+node "m1_61_0#" 0 46.192 61 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 22 0 0 0 0 0 0 0 0
+node "outm" 0 46.192 61 20 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 22 0 0 0 0 0 0 0 0
+node "m1_106_81#" 0 75.096 106 81 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45 36 0 0 0 0 0 0 0 0
+node "sbn" 0 43.792 -95 82 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 22 0 0 0 0 0 0 0 0
+node "san" 0 43.792 -95 89 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 22 0 0 0 0 0 0 0 0
+node "m1_8_94#" 0 75.424 8 94 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50 34 0 0 0 0 0 0 0 0
+node "gndm" 4 612.075 -72 65 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 375 250 128 86 0 0 0 0 0 0
+node "summ" 0 71.552 110 115 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 32 0 0 0 0 0 0 0 0
+node "m1_17_116#" 0 21.432 17 116 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 12 0 0 0 0 0 0 0 0
+node "m1_8_148#" 0 76.624 8 148 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52 34 0 0 0 0 0 0 0 0
+node "vddm" 5 583.682 -94 148 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 322 204 260 174 0 0 0 0 0 0
+node "a_51_n7#" 33 590.021 51 -7 pc 0 0 0 0 0 0 0 0 0 0 38 38 0 0 255 176 119 80 0 0 0 0 0 0
+node "a_42_n7#" 31 344.061 42 -7 pc 0 0 0 0 0 0 0 0 0 0 38 38 0 0 90 66 119 80 0 0 0 0 0 0
+node "scn" 24 286.224 18 59 pc 0 0 0 0 0 0 0 0 0 0 32 32 0 0 120 68 0 0 0 0 0 0 0 0
+equiv "scn" "dm"
+node "cm" 25 465.458 10 59 pc 0 0 0 0 0 0 0 0 0 0 32 32 0 0 209 126 147 80 0 0 0 0 0 0
+node "bm" 24 260.864 -14 59 pc 0 0 0 0 0 0 0 0 0 0 32 32 0 0 100 58 0 0 0 0 0 0 0 0
+node "am" 24 266.06 -22 59 pc 0 0 0 0 0 0 0 0 0 0 32 32 0 0 57 36 181 98 0 0 0 0 0 0
+cap "sbn" "san" 82.476
+cap "scn" "cm" 314.936
+cap "vddm" "am" 62.362
+cap "m1_17_116#" "cm" 20.619
+cap "am" "bm" 186.901
+cap "vddm" "sbn" 75.0315
+cap "gndm" "am" 31.312
+cap "vddm" "san" 23.484
+cap "vddm" "gndm" 624.871
+cap "m1_8_94#" "cm" 142.655
+cap "a_51_n7#" "a_42_n7#" 320.163
+subcap "m1_8_94#" -281.824
+subcap "cm" -781.829
+cap "vddm" "am" 275.357
+cap "vddm" "bm" 333.778
+cap "nand2_2/out" "nand2_2/w_n8_8#" 17.934
+cap "vddm" "nand2_2/w_n8_8#" -14.944
+cap "am" "bm" -0.73425
+cap "gndm" "nand2_2/out" 124.616
+cap "am" "nand2_2/w_n8_8#" 36.844
+cap "bm" "nand2_2/w_n8_8#" 36.844
+cap "gndm" "am" 70.548
+subcap "m1_8_94#" -104.224
+subcap "a_51_n7#" -344.877
+subcap "cm" -49.244
+cap "nand2_0/out" "nand2_2/w_n8_8#" 17.934
+cap "nand2_2/gnd" "nand2_1/b" 76.04
+cap "dm" "nand2_2/w_n8_8#" 36.844
+cap "nand2_2/gnd" "nand2_0/out" 283.132
+cap "cm" "nand2_2/w_n8_8#" 36.844
+cap "nand2_2/out" "nand2_2/gnd" 274.92
+cap "nand2_1/b" "nand2_0/out" -11.331
+cap "nand2_2/vdd" "dm" 76.04
+cap "nand2_2/vdd" "cm" 76.04
+cap "nand2_2/vdd" "nand2_2/w_n8_8#" -20.288
+cap "dm" "cm" -0.490929
+subcap "m1_106_81#" -1.132
+subcap "vddm" -366.259
+cap "sbn" "san" -15.4643
+cap "san" "xorr_1/gnd" 23.484
+cap "xorr_1/ccc" "xorr_1/w_n11_8#" 2.536
+cap "xorr_1/vdd" "san" 20.27
+cap "xorr_1/vdd" "xorr_1/gnd" 17.246
+cap "xorr_1/vdd" "xorr_1/inv_bt_1/w_n8_8#" 19.908
+cap "san" "xorr_1/ccc" 16.6916
+cap "xorr_1/ccc" "xorr_1/w_n11_8#" 0.864
+cap "xorr_1/ccc" "xorr_1/a_n51_n22#" 16.6916
+cap "xorr_1/ccc" "xorr_1/gnd" 18.7549
+cap "xorr_0/w_n11_8#" "xorr_0/ccc" 6.68
+cap "xorr_1/ccc" "xorr_0/bbb" -3.4365
+subcap "m1_106_81#" -10.375
+cap "summ" "xorr_0/w_n11_8#" 10.28
+merge "xorr_0/ccc" "summ" -15.648 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20 -8 0 0 0 0 0 0 0 0
+merge "xorr_0/vdd" "xorr_1/vdd" -91.036 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20 -40 0 0 0 0 0 0 0 0
+merge "xorr_1/vdd" "nand2_1/vdd"
+merge "nand2_1/vdd" "nand2_0/vdd"
+merge "nand2_0/vdd" "nand2_2/vdd"
+merge "nand2_2/vdd" "vddm"
+merge "vddm" "m1_8_148#"
+merge "xorr_0/gnd" "xorr_1/gnd" -113.285 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11 -58 0 0 0 0 0 0 0 0
+merge "xorr_1/gnd" "m1_8_94#"
+merge "m1_8_94#" "nand2_1/gnd"
+merge "nand2_1/gnd" "nand2_0/gnd"
+merge "nand2_0/gnd" "nand2_2/gnd"
+merge "nand2_2/gnd" "gndm"
+merge "gndm" "m1_61_0#"
+merge "xorr_1/aaa" "nand2_2/b" -97.072 0 0 0 0 0 0 0 0 0 0 0 -4 0 0 -24 -26 0 0 0 0 0 0 0 0
+merge "nand2_2/b" "xorr_1/a_n51_n22#"
+merge "xorr_1/a_n51_n22#" "san"
+merge "san" "bm"
+merge "nand2_0/b" "xorr_0/bbb" -7.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0 0 0 0 0 0
+merge "xorr_0/bbb" "dm"
+merge "dm" "scn"
+merge "xorr_0/aaa" "m1_17_116#" -145.992 0 0 0 0 0 0 0 0 0 0 0 -4 0 0 -73 -36 0 0 0 0 0 0 0 0
+merge "m1_17_116#" "xorr_1/ccc"
+merge "xorr_1/ccc" "xorr_0/a_n51_n22#"
+merge "xorr_0/a_n51_n22#" "nand2_0/a"
+merge "nand2_0/a" "cm"
+merge "cm" "m1_106_81#"
+merge "nand2_1/b" "nand2_2/out" -96.096 0 0 0 0 0 0 0 0 0 0 -6 -10 0 0 -24 -14 0 0 0 0 0 0 0 0
+merge "nand2_2/out" "a_51_n7#"
+merge "nand2_2/a" "xorr_1/bbb" -90.066 0 0 0 0 0 0 0 0 0 0 0 -4 0 0 -6 -12 -41 -23 0 0 0 0 0 0
+merge "xorr_1/bbb" "sbn"
+merge "sbn" "am"
+merge "nand2_1/w_n8_8#" "nand2_0/w_n8_8#" 154.19 0 0 0 0 170 -136 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nand2_0/w_n8_8#" "nand2_2/w_n8_8#"
+merge "nand2_1/a" "nand2_0/out" -88.896 0 0 0 0 0 0 0 0 0 0 -6 -10 0 0 -12 -14 0 0 0 0 0 0 0 0
+merge "nand2_0/out" "a_42_n7#"
+merge "nand2_1/out" "outm" -25.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 -14 0 0 0 0 0 0 0 0

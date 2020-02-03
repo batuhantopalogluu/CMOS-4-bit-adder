@@ -1,0 +1,142 @@
+timestamp 1579165144
+version 8.2
+tech scmos
+style TSMC0.25um(tsmc25)from:t11y
+scale 1000 1 12
+resistclasses 4600 3500 1067000 1067000 1 4000 4000 80 80 80 80 40
+use myadder myadder_0 1 0 95 0 1 14
+use myadder myadder_1 1 0 324 0 1 14
+use myadder myadder_2 1 0 553 0 1 14
+use myadder myadder_3 1 0 782 0 1 14
+node "gnd" 0 20.832 846 12 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 12 0 0 0 0 0 0 0 0
+node "cout" 0 20.832 846 32 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 12 0 0 0 0 0 0 0 0
+node "vdd" 0 20.832 846 66 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 12 0 0 0 0 0 0 0 0
+node "m1_616_33#" 9 2171.45 616 33 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1674 852 98 56 0 0 0 0 0 0
+node "m1_387_33#" 9 2154.84 387 33 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1658 844 106 60 0 0 0 0 0 0
+node "m1_158_34#" 9 2196.81 158 34 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1694 862 98 56 0 0 0 0 0 0
+node "m1_121_88#" 3 659.904 121 88 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 512 264 0 0 0 0 0 0 0 0
+node "b3" 0 16.96 685 96 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 10 0 0 0 0 0 0 0 0
+node "b2" 0 16.96 456 96 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 10 0 0 0 0 0 0 0 0
+node "b1" 0 16.96 227 96 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 10 0 0 0 0 0 0 0 0
+node "b0" 0 16.96 -2 96 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 10 0 0 0 0 0 0 0 0
+node "a3" 0 16.96 685 103 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 10 0 0 0 0 0 0 0 0
+node "a2" 0 16.96 456 103 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 10 0 0 0 0 0 0 0 0
+node "a1" 0 16.96 227 103 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 10 0 0 0 0 0 0 0 0
+node "a0" 0 16.96 -2 103 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 10 0 0 0 0 0 0 0 0
+node "m1_668_108#" 1 152.704 668 108 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 112 64 0 0 0 0 0 0 0 0
+node "m1_439_108#" 1 152.704 439 108 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 112 64 0 0 0 0 0 0 0 0
+node "m1_210_108#" 1 152.704 210 108 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 112 64 0 0 0 0 0 0 0 0
+node "s3" 0 20.832 904 129 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 12 0 0 0 0 0 0 0 0
+node "s2" 0 20.832 675 129 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 12 0 0 0 0 0 0 0 0
+node "s1" 0 20.832 446 129 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 12 0 0 0 0 0 0 0 0
+node "s0" 0 20.832 217 129 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 12 0 0 0 0 0 0 0 0
+node "m1_669_162#" 0 107.056 669 162 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 76 46 0 0 0 0 0 0 0 0
+node "m1_440_162#" 1 142.56 440 162 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 104 60 0 0 0 0 0 0 0 0
+node "m1_211_162#" 0 107.056 211 162 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 76 46 0 0 0 0 0 0 0 0
+cap "b3" "a3" 20.619
+cap "m1_387_33#" "m1_616_33#" 137.063
+cap "a2" "b2" 20.619
+cap "cout" "m1_616_33#" 16.4952
+cap "m1_210_108#" "a1" 20.619
+cap "vdd" "m1_616_33#" 23.5646
+cap "b0" "a0" 20.619
+cap "a2" "m1_439_108#" 20.619
+cap "b1" "a1" 20.619
+cap "m1_158_34#" "m1_387_33#" 119.88
+cap "m1_158_34#" "m1_121_88#" 137.063
+cap "gnd" "m1_616_33#" 16.4952
+cap "a3" "m1_668_108#" 20.619
+subcap "m1_158_34#" -1939.78
+cap "myadder_0/nand2_2/w_n8_8#" "myadder_0/outm" 2.94
+cap "myadder_0/dm" "myadder_0/nand2_0/vdd" 147.279
+subcap "b1" -379.298
+cap "myadder_1/gndm" "m1_158_34#" 412.38
+subcap "m1_387_33#" -2065.11
+cap "myadder_1/nand2_2/w_n8_8#" "myadder_1/outm" 0.502
+cap "myadder_1/dm" "myadder_1/nand2_2/out" 480.423
+cap "myadder_1/dm" "myadder_1/gndm" 219.936
+cap "myadder_1/xorr_0/a_n51_n22#" "myadder_1/dm" 67.7481
+subcap "b2" -136.32
+cap "myadder_1/m1_61_0#" "m1_158_34#" 13.746
+cap "myadder_1/xorr_0/a_n51_n22#" "m1_158_34#" 8.83671
+cap "m1_387_33#" "myadder_2/nand2_2/out" 453.618
+cap "m1_387_33#" "myadder_2/gndm" 608.26
+subcap "m1_616_33#" -1698.96
+subcap "b3" -55.96
+cap "m1_387_33#" "myadder_2/nand2_1/gnd" 41.238
+cap "myadder_2/xorr_0/a_n51_n22#" "m1_387_33#" 85.9125
+cap "myadder_2/nand2_1/w_n8_8#" "myadder_2/outm" 0.502
+cap "m1_387_33#" "myadder_2/xorr_0/bbb" 8.83671
+cap "m1_387_33#" "myadder_2/nand2_1/b" 92.7855
+cap "m1_616_33#" "myadder_3/gndm" 608.26
+cap "m1_616_33#" "myadder_3/nand2_2/out" 189.007
+subcap "vdd" -18.264
+cap "myadder_3/dm" "myadder_3/xorr_0/a_n51_n22#" 89.349
+cap "myadder_3/dm" "myadder_3/nand2_1/b" 364.269
+cap "gnd" "myadder_3/dm" 32.9904
+cap "myadder_3/dm" "vdd" 1.06581e-14
+cap "myadder_3/dm" "cout" 32.9904
+cap "a0" "b0" 1.42109e-13
+subcap "s0" -96.096
+cap "myadder_0/xorr_0/gnd" "a1" 51.5475
+cap "b1" "a1" -8.52651e-14
+cap "myadder_0/xorr_0/vdd" "a1" -1.13687e-13
+cap "myadder_0/xorr_0/vdd" "myadder_0/xorr_0/gnd" 11.148
+cap "myadder_1/scn" "myadder_1/xorr_1/ccc" 67.7481
+cap "s1" "myadder_1/xorr_0/w_n11_8#" -1.42109e-14
+cap "b2" "a2" -8.52651e-14
+cap "myadder_1/xorr_0/gnd" "myadder_1/xorr_0/vdd" 11.148
+cap "m1_158_34#" "myadder_1/xorr_0/a_n51_n22#" 8.83671
+cap "myadder_1/xorr_0/gnd" "a2" 51.5475
+cap "myadder_1/xorr_0/bbb" "s1" 7.10543e-15
+subcap "a3" -228.1
+cap "b3" "a3" 1.42109e-14
+cap "myadder_2/xorr_0/gnd" "myadder_2/xorr_0/vdd" 11.148
+cap "s2" "myadder_2/xorr_0/bbb" 7.10543e-15
+cap "myadder_2/xorr_0/gnd" "a3" 51.5475
+cap "m1_387_33#" "myadder_2/xorr_0/bbb" 8.83671
+cap "s2" "myadder_2/xorr_0/w_n11_8#" -1.42109e-14
+cap "m1_387_33#" "myadder_2/xorr_0/a_n51_n22#" 85.9125
+cap "myadder_3/scn" "myadder_3/xorr_0/aaa" 89.349
+merge "myadder_2/scn" "myadder_2/dm" -1443.27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1043 -610 0 0 0 0 0 0 0 0
+merge "myadder_2/dm" "myadder_1/outm"
+merge "myadder_1/outm" "m1_387_33#"
+merge "myadder_1/xorr_1/vdd" "myadder_0/xorr_0/vdd" -27.064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0
+merge "myadder_0/xorr_0/vdd" "m1_211_162#"
+merge "myadder_2/san" "a2" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0
+merge "myadder_1/sbn" "myadder_1/am" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0
+merge "myadder_1/am" "b1"
+merge "myadder_0/scn" "myadder_0/nand2_0/gnd" -21.376 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0
+merge "myadder_0/nand2_0/gnd" "myadder_0/dm"
+merge "myadder_0/dm" "m1_121_88#"
+merge "myadder_3/nand2_0/gnd" "gnd" -10.688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0
+merge "myadder_2/xorr_1/inv_bt_1/vdd" "myadder_1/xorr_0/vdd" -62.568 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28 -30 0 0 0 0 0 0 0 0
+merge "myadder_1/xorr_0/vdd" "m1_440_162#"
+merge "myadder_3/xorr_1/inv_bt_1/vdd" "myadder_2/xorr_0/vdd" -27.064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0
+merge "myadder_2/xorr_0/vdd" "m1_669_162#"
+merge "myadder_1/xorr_1/gnd" "myadder_0/xorr_0/gnd" -28.848 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -18 0 0 0 0 0 0 0 0
+merge "myadder_0/xorr_0/gnd" "m1_210_108#"
+merge "myadder_3/summ" "s3" 3.712 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 -8 0 0 0 0 0 0 0 0
+merge "myadder_1/scn" "myadder_1/dm" -1171.28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -884 -476 0 0 0 0 0 0 0 0
+merge "myadder_1/dm" "myadder_0/outm"
+merge "myadder_0/outm" "m1_158_34#"
+merge "myadder_2/xorr_1/inv_bt_1/gnd" "myadder_1/xorr_0/gnd" -28.848 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -18 0 0 0 0 0 0 0 0
+merge "myadder_1/xorr_0/gnd" "m1_439_108#"
+merge "myadder_3/outm" "cout" -10.688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0
+merge "myadder_3/xorr_1/gnd" "myadder_3/xorr_1/inv_bt_1/gnd" -19.248 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 -18 0 0 0 0 0 0 0 0
+merge "myadder_3/xorr_1/inv_bt_1/gnd" "myadder_2/xorr_0/gnd"
+merge "myadder_2/xorr_0/gnd" "m1_668_108#"
+merge "myadder_2/summ" "s2" -10.688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0
+merge "myadder_3/scn" "myadder_3/dm" -754.254 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -576 -304 0 0 0 0 0 0 0 0
+merge "myadder_3/dm" "myadder_2/outm"
+merge "myadder_2/outm" "m1_616_33#"
+merge "myadder_2/sbn" "b2" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0
+merge "myadder_3/san" "a3" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0
+merge "myadder_1/summ" "s1" -10.688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0
+merge "myadder_0/summ" "s0" -10.688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0
+merge "myadder_0/san" "a0" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0
+merge "myadder_1/san" "a1" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0
+merge "myadder_3/sbn" "b3" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0
+merge "myadder_0/sbn" "myadder_0/am" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0 0 0 0 0
+merge "myadder_0/am" "b0"
+merge "myadder_3/nand2_0/vdd" "vdd" -10.688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0

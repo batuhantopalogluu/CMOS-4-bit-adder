@@ -1,0 +1,89 @@
+* SPICE3 file created from xorr.ext - technology: scmos
+
+.option scale=0.01u
+
+M1000 inv_bt_0/y bbb vdd w_n11_8# pmos w=240 l=24
++  ad=14400 pd=600 as=57600 ps=2400
+M1001 inv_bt_0/y bbb gnd gnd nmos w=96 l=24
++  ad=5760 pd=312 as=23040 ps=1248
+M1002 inv_bt_1/y aaa vdd inv_bt_1/w_n8_8# pmos w=240 l=24
++  ad=14400 pd=600 as=0 ps=0
+M1003 inv_bt_1/y aaa gnd gnd nmos w=96 l=24
++  ad=5760 pd=312 as=0 ps=0
+M1004 a_5_14# aaa vdd w_n11_8# pmos w=240 l=24
++  ad=11520 pd=576 as=0 ps=0
+M1005 ccc inv_bt_0/y a_5_14# w_n11_8# pmos w=240 l=24
++  ad=20160 pd=648 as=0 ps=0
+M1006 a_20_14# inv_bt_1/y ccc w_n11_8# pmos w=240 l=24
++  ad=11520 pd=576 as=0 ps=0
+M1007 vdd bbb a_20_14# w_n11_8# pmos w=240 l=24
++  ad=0 pd=0 as=0 ps=0
+M1008 a_5_n9# inv_bt_0/y gnd gnd nmos w=96 l=24
++  ad=4608 pd=288 as=0 ps=0
+M1009 ccc inv_bt_1/y a_5_n9# gnd nmos w=96 l=24
++  ad=8064 pd=360 as=0 ps=0
+M1010 a_20_n9# bbb ccc gnd nmos w=96 l=24
++  ad=4608 pd=288 as=0 ps=0
+M1011 gnd aaa a_20_n9# gnd nmos w=96 l=24
++  ad=0 pd=0 as=0 ps=0
+
+C0 ccc bbb 0.03fF
+C1 inv_bt_0/y w_n11_8# 0.24fF
+C2 vdd bbb 0.05fF
+C3 aaa bbb 1.14fF
+C4 inv_bt_1/w_n8_8# vdd 0.13fF
+C5 gnd inv_bt_0/y 0.12fF
+C6 aaa inv_bt_1/w_n8_8# 0.20fF
+C7 ccc w_n11_8# 0.08fF
+C8 ccc gnd 0.11fF
+C9 vdd w_n11_8# 0.38fF
+C10 aaa w_n11_8# 0.11fF
+C11 inv_bt_1/y inv_bt_0/y 0.11fF
+C12 aaa gnd 0.52fF
+C13 ccc inv_bt_1/y 0.06fF
+C14 bbb w_n11_8# 0.27fF
+C15 gnd bbb 0.60fF
+C16 inv_bt_1/y vdd 0.37fF
+C17 inv_bt_1/y aaa 0.17fF
+C18 inv_bt_1/y bbb 0.15fF
+C19 inv_bt_1/y inv_bt_1/w_n8_8# 0.10fF
+C20 inv_bt_1/y w_n11_8# 0.17fF
+C21 inv_bt_1/y gnd 0.12fF
+C22 ccc inv_bt_0/y 0.07fF
+C23 inv_bt_0/y vdd 0.25fF
+C24 aaa inv_bt_0/y 0.06fF
+C25 ccc vdd 0.11fF
+C26 inv_bt_0/y bbb 0.05fF
+C27 aaa vdd 0.87fF
+C28 ccc gnd 0.10fF
+C29 inv_bt_1/y gnd 0.54fF
+C30 aaa gnd 1.47fF
+C31 inv_bt_1/w_n8_8# gnd 0.74fF
+C32 gnd gnd 0.64fF
+C33 inv_bt_0/y gnd 0.35fF
+C34 vdd gnd 0.20fF
+C35 bbb gnd 0.97fF
+C36 w_n11_8# gnd 2.15fF
+
+* INDEPENDANT VOLTAGE SOURCE
+*
+*Vname +NODE -NODE VALUE
+*----- ----- ----- -----
+ VCC    vdd   gnd   DC=2.5
+
+* TRANSIENT analysis
+*
+*Vname +Node -Node Option T1  V1  T2    V2  T3  V3  T4    V4   T5   V5   T6     V6  T7   V7  T8     V8   T9   V9   T10    V10
+*----- ----- ----- ------ --  --  ----  --  --  --  ----  ---  ---  ---  -----  --  ---  --  -----  ---  ---  ---  -----  ---
+ Va     aaa     gnd  PWL(   0N   0  0.1N   0  8N   0  8.1N  2.5  16N  2.5  16.1N   0  ) 
+ Vb     bbb     gnd  PWL(   0N   0  0.1N   0  4N   0  4.1N  2.5   8N  2.5   8.1N   0  12N   0  12.1N  2.5  16N  2.5  16.1N    0  ) 
+
+*     TSTEP TSTOP
+*     ----- -----
+.TRAN 0.1N  16.1N
+
+*MODELS
+*
+.include tsmc_cmos025
+
+.END
